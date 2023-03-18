@@ -1,8 +1,11 @@
-x = "*";
+let baris = 5;
+let pola = '';
 
-for (let index= 0;index <= 5;index++){
-    for(let index2=0;index<=5;index++){
-        console.log(x);
+for(let i = 0; i <= baris; i++){
+    for(let n = 0; n <= i; n++){
+        pola += 'x';
     }
-    console.log(x);
+    pola += '\n';
 }
+
+console.log(pola);

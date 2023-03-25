@@ -14,3 +14,6 @@ myArray.pop();
 //for add item in the firs place
 myArray.unshift('this is first');
 console.log(myArray);
+
+myArray.splice(1, 1);
+console.log(`Ini adalah hasil akhir dari array ${myArray}`);

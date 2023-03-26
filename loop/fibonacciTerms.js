@@ -1,13 +1,14 @@
-function fibonacciTerms(number){
+function fiboTerms(number){
     let n1 = 0;
     let n2 = 1;
-    let nexterms;
+    let temp;
 
-    for(i = 1; i <= number; i++){
+    for(i = 0; i <= number; i++){
         console.log(n1);
-        nexterms = n1 + n2;
+        temp = n1 + n2;
         n1 = n2;
-        n2 = nexterms;
+        n2 = temp;
     }
 }
-console.log(fibonacciTerms(5));
+
+fiboTerms(5);

@@ -11,4 +11,6 @@ function findOdd(number){
     return n;
 }
 
+console.log(findOdd(5));
+console.log(findOdd(10));
 console.log(findOdd(50));

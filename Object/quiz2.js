@@ -1,7 +1,9 @@
 let evenNumber = [];
 
 for(let i=1; i<=100; i++){
-    evenNumber.push(i);
+    if(i % 2 == 0){
+        evenNumber.push(i);
+    } 
 }
 
 console.log(evenNumber);

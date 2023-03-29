@@ -13,11 +13,3 @@ console.log(pola);
 
 // now lets do a reverse
 
-for (let a = 0; a > baris; a++){
-    for(let b = 5; b >= a; b--){
-        pola2 += 'x';
-    }
-    pola2 += '\n';
-}
-
-console.log(pola2);

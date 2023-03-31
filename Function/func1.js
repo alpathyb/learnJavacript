@@ -32,3 +32,23 @@ function test(d,e,f){
 }
 
 console.log(test(2,5,'bagi'));
+
+//now lets deconstructing objec and using it to function
+
+const user1 = {
+    name : 'Alfath',
+    age : 21,
+    hobby : 'gym',
+};
+
+function intro({name, age, hobby}){
+
+console.log(`Hello my name is ${name}! I was ${age} years old and my hobby is ${hobby}`);
+}
+
+// calling using user1
+intro(user1);
+
+// calling using user2
+console.log(intro);
+

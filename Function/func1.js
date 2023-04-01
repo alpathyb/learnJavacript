@@ -49,6 +49,18 @@ console.log(`Hello my name is ${name}! I was ${age} years old and my hobby is ${
 // calling using user1
 intro(user1);
 
-// calling using user2
+// calling using user2 , // proven wrong ways!
 console.log(intro);
+
+// create the custom parameter to create multiply
+
+function mult(...numbers){
+    let result = 1;
+    for(let temp of numbers){
+        result = temp * result;
+    }
+    return result;
+}
+console.log(mult(1,2,3,4,5));
+
 

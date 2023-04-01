@@ -1,3 +1,5 @@
+// create fibonacci function using arrow expression function
+
 const addmult = (a) => {
     let temp;
     let n1 = 0;

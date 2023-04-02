@@ -36,8 +36,6 @@ from the array.
 
 */
 
-const findIndex = (array, number) =>{
-    
-}
+const findIndex = (array, number) => {return array.indexOf(number);}
 
-console.log(findIndex([1,2,3,4,5], 1));
+console.log(findIndex([1,2,3,4,5], 5));

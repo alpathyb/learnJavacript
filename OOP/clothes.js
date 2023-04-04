@@ -5,6 +5,7 @@ class clothes {
         this.color = color;
         this.size = size;
         this.price = price;
+        this.tagList = `this clothe cost RP ${price} ,but equal to RP ${Math.floor(Math.random() * 100000) - 99}`;
     }
 
     changeClothes(color, size){

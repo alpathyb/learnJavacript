@@ -22,7 +22,16 @@ class waService extends mailService{
             console.log(`this sender: ${sender} with status: ${status} to those receivers: ${receivers}`);
         }
     }
+
+    sendMsg(msg, receiver){
+        super.sendMsg(msg,receiver);
+
+        console.log('Sent it via WhatsApp');
+    }
 }
 
 const user1 = new waService('fajar', 'legal');
-console.log(user1);
+user1.sendMsg('Halo','alfath');
+
+//now lets create overriding method
+

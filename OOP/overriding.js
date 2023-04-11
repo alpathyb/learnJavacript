@@ -17,9 +17,9 @@ class waService extends mailService{
         this.status = status;
     }
 
-    broadMsg(sender,status,receiver){
+    broadMsg(status,receiver){
         for(const receivers of receiver){
-            console.log(`this sender: ${sender} with status: ${status} to those receivers: ${receivers}`);
+            console.log(`this sender: ${this.sender} with status: ${status} to those receivers: ${receivers}`);
         }
     }
 
@@ -32,6 +32,7 @@ class waService extends mailService{
 
 const user1 = new waService('fajar', 'legal');
 user1.sendMsg('Halo','alfath');
+user1.broadMsg('Business',['ripal','rehan','ampon']);
 
 //now lets create overriding method
 

@@ -31,6 +31,9 @@ class waService extends mailService{
 }
 
 const user1 = new waService('fajar', 'legal');
+const user2 = new mailService('alfath');
+
+user2.sendMsg('hello world!','taesan');
 user1.sendMsg('Halo','alfath');
 user1.broadMsg('Business',['ripal','rehan','ampon']);
 

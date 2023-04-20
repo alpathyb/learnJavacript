@@ -31,4 +31,8 @@ const myEagle = new Eagle('Elo',4);
 
 console.log(myRabbit);
 console.log(myEagle);
-console.log(myRabbit.isMammal);
+
+class Car {}
+
+const myCar = new Car();
+console.log(typeof myCar);

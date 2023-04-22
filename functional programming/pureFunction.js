@@ -35,3 +35,6 @@ const countFibo2 = (x) =>{
 }
 
 console.log(...countFibo2(5));
+
+//create immutability function
+// write your code here

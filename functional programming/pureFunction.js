@@ -34,7 +34,22 @@ const countFibo2 = (x) =>{
     return result;
 }
 
-console.log(...countFibo2(5));
+console.log(...countFibo2(10));
 
 //create immutability function
 // write your code here
+
+let result = [];
+
+const fibo1 = (x) =>{
+    result[0] = 0;
+    result[1] = 1;
+
+    for(let i = 2; i<= x; i++){
+        result[i] = result[i-1]+ result[i-2];
+    }
+    return result;
+}
+
+console.log(...fibo1(9));
+console.log(result);

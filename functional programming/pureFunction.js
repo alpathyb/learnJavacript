@@ -53,3 +53,14 @@ const fibo1 = (x) =>{
 
 console.log(...fibo1(9));
 console.log(result);
+
+//create on recursive function
+
+const countCar = (car) => {
+    console.log(car);
+
+    //countCar call himself again because the condition is fulfill, it will iterate until the conditon !fulfill
+    if(car > 0) countCar(car-1);
+}
+
+console.log(countCar(10));

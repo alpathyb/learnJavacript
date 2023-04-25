@@ -31,5 +31,10 @@ class coffeMec{
     }
 }
 
+const {coffeStock, supStock} = require('./state');
+console.log(coffeStock);
+console.log(supStock);
+
+
 const firstOrder = new coffeMec(2);
 firstOrder.order(1, 2);

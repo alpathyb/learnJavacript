@@ -2,6 +2,7 @@ const coffeStock = {
     Arabica : 100,
     Robusta : 200,
     Luwaks : 150,
+    medan : 100,
 }
 
 const supStock ={

@@ -32,21 +32,25 @@ function goInsideCinema(ticket){
     });
 }
 
-function watchCinema(withdraw){
-    getMoney(withdraw)
-        .then((money)=>{
-            return buyTicket(money);
-        })
-        .then((ticket)=>{
-            return goInsideCinema(ticket);
-        })
-        .then((result)=>{
-            console.log(result);
-        })
-        .catch((error)=>{
-            console.log(error.message);
-        })
-}
+module.exports = {getMoney, buyTicket, goInsideCinema};
+
+// function watchCinema(withdraw){
+//     getMoney(withdraw)
+//         .then((money)=>{
+//             return buyTicket(money);
+//         })
+//         .then((ticket)=>{
+//             return goInsideCinema(ticket);
+//         })
+//         .then((result)=>{
+//             console.log(result);
+//         })
+//         .catch((error)=>{
+//             console.log(error.message);
+//         })
+// }
 
 //now let's run the code
-watchCinema(10);
+//you can change the number on the parameter to fill the value of
+//how much money you would take
+// watchCinema(10);
